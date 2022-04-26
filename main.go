@@ -24,7 +24,7 @@ func main() {
 
 	mdHtml := blackfriday.Run(raw, blackfriday.WithExtensions(blackfriday.CommonExtensions), blackfriday.WithExtensions(blackfriday.Footnotes))
 
-	fWr, err := os.Create("./render/index.html")
+	fWr, err := os.Create("./docs/index.html")
 	if err != nil {
 		panic(err)
 	}
